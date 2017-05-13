@@ -19,7 +19,7 @@
             c = b.getFullYear(),
             d = {
                 brand: "SSS",
-                name: "DuyViet",
+                name: "Ducky",
                 year: c,
                 layout: "wide",
                 menu: "vertical",
