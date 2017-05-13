@@ -3,11 +3,16 @@
     "COPYRIGHT": "Copyright",
     
     "DASHBOARD": "Tổng quan",
-    
-    "PRODUCTS": "Sản phẩm",
-    
+
+    "LOG_OUT": "Thoát",
+
+    "MY_PROFILE": "Thông tin cá nhân",
+
     "ORDERS": "Hóa đơn",
-    
+
+    "PRODUCTS": "Sản phẩm",
+
     "SALES": "Bán hàng",
+    "SEARCH": "Tìm kiếm",
     "STORE": "Kho"
 }

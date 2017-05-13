@@ -1,4 +1,4 @@
-<div class="page-signin" data-ng-controller="SigninCtrl as vm">
+<div class="page-signin" data-ng-controller="SigninCtrl as c">
 
     <div class="signin-header">
         <div class="container text-center">
@@ -49,7 +49,7 @@
                         <div class="form-group">
                         </div>
                         <div class="form-group">
-                            <button type="button" data-ng-click="vm.login()" class="btn btn-primary btn-lg btn-block">Log in</button>
+                            <button type="button" data-ng-click="c.login()" class="btn btn-primary btn-lg btn-block">Log in</button>
                         </div>
                         <div class="form-group">
                             <div vc-recaptcha key="model.key"></div>

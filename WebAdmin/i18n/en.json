@@ -3,11 +3,16 @@
     "COPYRIGHT": "Copyright",
     
     "DASHBOARD": "Dashboard",
-    
-    "PRODUCTS": "Products",
-    
+
+    "LOG_OUT": "Logout",
+
+    "MY_PROFILE": "Profile",
+
     "ORDERS": "Orders",
-    
+
+    "PRODUCTS": "Products",
+
     "SALES": "Sales",
+    "SEARCH": "Search",
     "STORE": "Store"
 }

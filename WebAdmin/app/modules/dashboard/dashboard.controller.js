@@ -1,7 +1,7 @@
 (function() {
     "use strict";
 
-    function a(a) {
+    function a(a, BindingService) {
         a.line2 = {}, a.radar1 = {}, a.line2.options = {
             tooltip: {
                 trigger: "axis"
@@ -115,6 +115,9 @@
                 }]
             }]
         }
+
+        a.data = BindingService.get();
     }
-    angular.module("app").controller("DashboardCtrl", ["$scope", a])
+
+    angular.module("app").controller("DashboardCtrl", ["$scope","BindingService", a])
 })();
