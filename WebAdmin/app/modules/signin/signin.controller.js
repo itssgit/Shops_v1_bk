@@ -22,6 +22,10 @@
         };
         $scope.login = function() {
             if($scope.loginForm.email.$invalid || $scope.loginForm.password.$invalid){
+                $scope.loginForm.email.$error = {
+                    "email": true
+                };
+                $scope.loginForm.email.$touched = true;
                 return false;
             }
             var data = {
