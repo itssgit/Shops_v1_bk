@@ -8,9 +8,10 @@
 
     function SigninCtrl(SigninService, Cookies, $scope, $location, BindingService) {
 
-        $scope.model = {
-            key: '6LfjNyAUAAAAAEbHfAHZsBS8rjR2S5m_syM_v0DF'
-        };
+        //captcha gg
+        // $scope.model = {
+        //     key: '6LfjNyAUAAAAAEbHfAHZsBS8rjR2S5m_syM_v0DF'
+        // };
         
         var onLoginSuccess = function onLoginSuccess(data){
             BindingService.set(data);
@@ -19,7 +20,10 @@
         var onLoginError = function onLoginError (data) {
             alert("error" + data);    
         };
-        this.login = function() {
+        $scope.login = function() {
+            if($scope.loginForm.email.$invalid || $scope.loginForm.password.$invalid){
+                return false;
+            }
             var data = {
                 "email": "vietdaoduy@gmail.com",
                 "fullName": "Dao Duy Viet",
@@ -31,6 +35,8 @@
             };
             Cookies.set("user",data);
             SigninService.login(data, onLoginSuccess, onLoginError);
+            // var d = JSON.parse(localStorage.getItem('test') || {});
+            // console.log(d);
         };
     }
 })();

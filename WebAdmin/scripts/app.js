@@ -1,6 +1,6 @@
 ! function() {
     "use strict";
-    angular.module("app", ["ngRoute", "ngAnimate", "ngAria", "ui.bootstrap", "ui.tree", "ngMap", "ngTagsInput", "textAngular", "angular-loading-bar", "ui.calendar", "duScroll", "mgo-angular-wizard", "app.nav", "app.i18n", "app.chart", "app.ui", "app.ui.form", "app.ui.form.validation", "app.page", "app.table", "app.task", "app.calendar","ngCookies", "vcRecaptcha"])
+    angular.module("app", ["ngRoute", "ngAnimate", "ngAria", "ui.bootstrap", "ui.tree", "ngMap", "ngTagsInput", "textAngular", "angular-loading-bar", "ui.calendar", "duScroll", "mgo-angular-wizard", "app.nav", "app.i18n", "app.chart", "app.ui", "app.ui.form", "app.ui.form.validation", "app.page", "app.table", "app.task", "app.calendar","ngCookies", "vcRecaptcha", "ngMessages"])
 }(),
 function() {
     "use strict";
@@ -238,7 +238,14 @@ function() {
 
     function a() {
         var a, b;
-        return a = "tasks", b = '[ {"title": "Upgrade to Yosemite", "completed": true},{"title": "Finish homework", "completed": false},{"title": "Try Google glass", "completed": false},{"title": "Build a snowman :)", "completed": false},{"title": "Play games with friends", "completed": true},{"title": "Learn Swift", "completed": false},{"title": "Shopping", "completed": true} ]', {
+        return a = "tasks", b = '[ ' +
+            '{"title": "Upgrade to Yosemite", "completed": true},' +
+            '{"title": "Finish homework", "completed": false},' +
+            '{"title": "Try Google glass", "completed": false},' +
+            '{"title": "Build a snowman :)", "completed": false},' +
+            '{"title": "Play games with friends", "completed": true},' +
+            '{"title": "Learn Swift", "completed": false},' +
+            '{"title": "Shopping", "completed": true} ]', {
             get: function() {
                 return JSON.parse(localStorage.getItem(a) || b)
             },
@@ -2076,54 +2083,6 @@ function() {
     }
     angular.module("app.chart").controller("EChartsCtrl", ["$scope", "$timeout", a])
 }(),
-//function() {
-//    "use strict";
-//
-//    function a() {
-//        var a = [{
-//                name: "Fade up",
-//                "class": "animate-fade-up"
-//            }, {
-//                name: "Scale up",
-//                "class": "ainmate-scale-up"
-//            }, {
-//                name: "Slide in from right",
-//                "class": "ainmate-slide-in-right"
-//            }, {
-//                name: "Flip Y",
-//                "class": "animate-flip-y"
-//            }],
-//            b = new Date,
-//            c = b.getFullYear(),
-//            d = {
-//                brand: "Square",
-//                name: "Lisa",
-//                year: c,
-//                layout: "wide",
-//                menu: "vertical",
-//                isMenuCollapsed: !1,
-//                fixedHeader: !0,
-//                fixedSidebar: !0,
-//                pageTransition: a[0],
-//                skin: "12"
-//            },
-//            e = {
-//                primary: "#31C0BE",
-//                success: "#60CD9B",
-//                info: "#66B5D7",
-//                infoAlt: "#8170CA",
-//                warning: "#EEC95A",
-//                danger: "#E87352",
-//                gray: "#DCDCDC"
-//            };
-//        return {
-//            pageTransitionOpts: a,
-//            main: d,
-//            color: e
-//        }
-//    }
-//    angular.module("app").factory("appConfig", [a])
-//}(),
 function() {
     "use strict";
 
@@ -2223,70 +2182,6 @@ function() {
         }
     }
     angular.module("app.ui.form").directive("uiFileUpload", a)
-}(),
-function() {
-    "use strict";
-
-    function a(a) {
-        var b;
-        a.form = {
-            required: "",
-            minlength: "",
-            maxlength: "",
-            length_rage: "",
-            type_something: "",
-            confirm_type: "",
-            foo: "",
-            email: "",
-            url: "",
-            num: "",
-            minVal: "",
-            maxVal: "",
-            valRange: "",
-            pattern: ""
-        }, b = angular.copy(a.form), a.revert = function() {
-            return a.form = angular.copy(b), a.form_constraints.$setPristine()
-        }, a.canRevert = function() {
-            return !angular.equals(a.form, b) || !a.form_constraints.$pristine
-        }, a.canSubmit = function() {
-            return a.form_constraints.$valid && !angular.equals(a.form, b)
-        }
-    }
-
-    function b(a) {
-        var b;
-        a.user = {
-            email: "",
-            password: ""
-        }, a.showInfoOnSubmit = !1, b = angular.copy(a.user), a.revert = function() {
-            return a.user = angular.copy(b), a.form_signin.$setPristine()
-        }, a.canRevert = function() {
-            return !angular.equals(a.user, b) || !a.form_signin.$pristine
-        }, a.canSubmit = function() {
-            return a.form_signin.$valid && !angular.equals(a.user, b)
-        }, a.submitForm = function() {
-            return a.showInfoOnSubmit = !0, a.revert()
-        }
-    }
-
-    function c(a) {
-        var b;
-        a.user = {
-            name: "",
-            email: "",
-            password: "",
-            age: ""
-        }, a.showInfoOnSubmit = !1, b = angular.copy(a.user), a.revert = function() {
-            a.user = angular.copy(b), a.form_signup.$setPristine()
-        }, a.canRevert = function() {
-            return !angular.equals(a.user, b) || !a.form_signup.$pristine
-        }, a.canSubmit = function() {
-            return a.form_signup.$valid && !angular.equals(a.user, b)
-        }, a.submitForm = function() {
-            return a.showInfoOnSubmit = !0, a.revert()
-        }
-    }
-    angular.module("app.ui.form.validation").controller("formConstraintsCtrl", ["$scope", a]).controller("signinCtrl", ["$scope", b]).controller("signupCtrl", ["$scope", c])
 }(),
 function() {
     "use strict";

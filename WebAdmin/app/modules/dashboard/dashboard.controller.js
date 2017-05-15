@@ -117,6 +117,7 @@
         }
 
         a.data = BindingService.get();
+        // localStorage.setItem('test', JSON.stringify(a.data));
         console.log(a.data);
     }
 

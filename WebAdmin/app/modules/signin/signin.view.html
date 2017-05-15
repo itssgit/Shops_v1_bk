@@ -1,4 +1,4 @@
-<div class="page-signin" data-ng-controller="SigninCtrl as c">
+<div class="page-signin" data-ng-controller="SigninCtrl">
 
     <div class="signin-header">
         <div class="container text-center">
@@ -22,38 +22,51 @@
 
                 <span class="line-thru">OR</span>
 
-                <form class="form-horizontal">
+                <form name="loginForm" ng-submit="login()" class="form-horizontal" novalidate>
                     <fieldset>
-                        <div class="form-group">
+                        <div class="form-group" ng-class="{ 'has-error': loginForm.email.$touched && loginForm.email.$invalid }">
                             <div class="input-group input-group-lg">
                                 <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-envelope"></span>
                                 </span>
                                 <input type="email"
+                                       ng-model="email"
+                                       name="email"
                                        class="form-control"
                                        placeholder="Email"
-                                       >
+                                       required
+                                >
+                            </div>
+                            <div class="help-block" ng-messages="loginForm.email.$error" ng-if="loginForm.email.$touched">
+                                <p ng-message="required">Your email is required.</p>
+                                <p ng-message="email">This needs to be a valid email</p>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" ng-class="{ 'has-error': loginForm.password.$touched && loginForm.password.$invalid }">
                             <div class="input-group input-group-lg">
                                 <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-lock"></span>
                                 </span>
                                 <input type="password"
+                                       name="password"
+                                       ng-model="password"
                                        class="form-control"
-                                       placeholder="password"
-                                       >
+                                       placeholder="Password"
+                                       required
+                                >
+                            </div>
+                            <div class="help-block" ng-messages="loginForm.password.$error" ng-if="loginForm.password.$touched">
+                                <p ng-message="required">Your password is required.</p>
                             </div>
                         </div>
                         <div class="form-group">
                         </div>
                         <div class="form-group">
-                            <button type="button" data-ng-click="c.login()" class="btn btn-primary btn-lg btn-block">Log in</button>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Log in</button>
                         </div>
-                        <div class="form-group">
-                            <div vc-recaptcha key="model.key"></div>
-                        </div>
+                        <!--<div class="form-group">-->
+                        <!--<div vc-recaptcha key="model.key"></div>-->
+                        <!--</div>-->
                     </fieldset>
                 </form>
 
@@ -61,7 +74,7 @@
                     <p class="text-center"><a href="#/forgot-password">Forgot your password?</a></p>
                     <p class="text-center text-muted text-small">Don't have an account yet? <a href="#/signup">Sign up</a></p>
                 </section>
-                
+
             </div>
         </div>
     </div>
