@@ -21,8 +21,13 @@
         };
         this.login = function() {
             var data = {
-                "email": "peter@klaven",
-                "password": "cityslicka"
+                "email": "vietdaoduy@gmail.com",
+                "fullName": "Dao Duy Viet",
+                "id": 1,
+                "passWord": "string",
+                "phoneNumber": "string",
+                "roleId": 1,
+                "userName": "string"
             };
             Cookies.set("user",data);
             SigninService.login(data, onLoginSuccess, onLoginError);

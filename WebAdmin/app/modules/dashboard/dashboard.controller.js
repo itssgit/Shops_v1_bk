@@ -117,6 +117,7 @@
         }
 
         a.data = BindingService.get();
+        console.log(a.data);
     }
 
     angular.module("app").controller("DashboardCtrl", ["$scope","BindingService", a])

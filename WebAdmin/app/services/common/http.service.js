@@ -8,17 +8,15 @@
     function HttpService($http) {
         var vm = this;
 
-        vm.callService = function (url, data, onSuccess, onError) {
+        vm.callGetService = function (url, onSuccess, onError) {
             $http(
                 {
-                    method: 'POST',
+                    method: 'GET',
                     url: url,
                     headers: {
                         'Content-Type': 'application/json;charset=UTF-8',
                         'Accept': '*'
-                        // 'captcha-key':"captcha-123"
-                    },
-                    data: data
+                    }
                 }
             ).then(function (response) {
                     onSuccess(response.data);
@@ -27,8 +25,27 @@
                         onError(rejectResponse.data);
                 });
         };
+
+        vm.callPostService = function (url, data, onSuccess, onError) {
+            $http(
+                {
+                    method: 'POST',
+                    url: url,
+                    headers: {
+                        'Content-Type': 'application/json;charset=UTF-8',
+                        'Accept': '*'
+                    },
+                    data: data
+                }
+            ).then(function (response) {
+                onSuccess(response.data);
+            })
+                .catch(function (rejectResponse) {
+                    onError(rejectResponse.data);
+                });
+        };
         
-        vm.callServiceWithSessionHeader = function (url, data, onSuccess, onError) {
+        vm.callPostServiceWithSessionHeader = function (url, data, onSuccess, onError) {
             var sessionKey = '';
             $http(
                 {
@@ -38,7 +55,6 @@
                         'Content-Type': 'application/json;charset=UTF-8',
                         'Accept': '*',
                         'session-key': sessionKey
-                        // 'captcha-key':"captcha-123"
                     },
                     data: data
                 }
