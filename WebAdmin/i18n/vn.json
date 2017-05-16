@@ -3,16 +3,26 @@
     "COPYRIGHT": "Copyright",
     
     "DASHBOARD": "Tổng quan",
+    "DONT_HAVE_ACCOUNT": "Bạn chưa có tài khoản? ",
 
+    "EMAIL": "Email",
+    "ENTRIES": "mục",
+
+    "FORGOT_YOUR_PASSWORD": "Quên mật khẩu?",
+
+    "LOG_IN": "Đăng nhập",
     "LOG_OUT": "Thoát",
 
     "MY_PROFILE": "Thông tin cá nhân",
 
     "ORDERS": "Hóa đơn",
 
+    "PASSWORD": "Mật khẩu",
     "PRODUCTS": "Sản phẩm",
 
     "SALES": "Bán hàng",
     "SEARCH": "Tìm kiếm",
+    "SHOWING": "Hiển thị",
+    "SIGN_UP": "Đăng kí",
     "STORE": "Kho"
 }

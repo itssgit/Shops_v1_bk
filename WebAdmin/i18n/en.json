@@ -3,16 +3,26 @@
     "COPYRIGHT": "Copyright",
     
     "DASHBOARD": "Dashboard",
+    "DONT_HAVE_ACCOUNT": "Don't have an account yet? ",
 
+    "EMAIL": "Email",
+    "ENTRIES": "entries",
+
+    "FORGOT_YOUR_PASSWORD": "Forgot your password?",
+
+    "LOG_IN": "Log in",
     "LOG_OUT": "Logout",
 
     "MY_PROFILE": "Profile",
 
     "ORDERS": "Orders",
 
+    "PASSWORD": "Password",
     "PRODUCTS": "Products",
 
     "SALES": "Sales",
     "SEARCH": "Search",
+    "SHOWING": "Showing",
+    "SIGN_UP": "Sign up",
     "STORE": "Store"
 }
