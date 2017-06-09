@@ -2693,6 +2693,10 @@ function() {
             templateUrl: "app/modules/forgotpassword/forgot-password.view.html"
         }).when("/products", {
             templateUrl: "app/modules/products/products.view.html"
+        }).when("/products-create", {
+            templateUrl: "app/modules/products/products.detail.view.html"
+        }).when("/products-edit", {
+            templateUrl: "app/modules/products/products.detail.view.html"
         }).when("/404", {
             templateUrl: "app/page/404.html"
         }).otherwise({

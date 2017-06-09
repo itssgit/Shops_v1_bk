@@ -9,7 +9,9 @@
             </strong>
 
             <div class="pull-right">
-                <button class="btn btn-primary btn-w-md">{{'ADD' | translate}}</button>
+                <button class="btn btn-primary btn-w-md"><span class="glyphicon glyphicon-plus"></span>&nbsp;{{'ADD' | translate}}</button>
+                <button class="btn btn-success btn-w-md"><span class="glyphicon glyphicon-save"></span>&nbsp;{{'EXPORT' | translate}}</button>
+                <button class="btn btn-danger btn-w-md"><span class="glyphicon glyphicon-trash"></span>&nbsp;{{'DELETE' | translate}}&nbsp;({{'SELECTED' | translate}})</button>
             </div>
         </div>
 
@@ -40,12 +42,6 @@
                 </div></th>
                 <th><div class="th">
                     {{'PICTURES' | translate}}
-                    <span class="fa fa-angle-up"
-                          data-ng-click=" order('sales') "
-                          data-ng-class="{active: row == 'sales'}"></span>
-                    <span class="fa fa-angle-down"
-                          data-ng-click=" order('-sales') "
-                          data-ng-class="{active: row == '-sales'}"></span>
                 </div></th>
                 <th><div class="th">
                     {{'PRODUCTS' | translate}}
@@ -75,7 +71,10 @@
                 <td>path picture</td>
                 <td>{{store.name}}</td>
                 <td>{{store.price}}</td>
-                <td><button type="button" class="btn btn-primary"><span class="fa fa-pencil"></span>&nbsp;{{'EDIT' | translate}}</button></td>
+                <td>
+                    <a href="#products-edit" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span>&nbsp;{{'EDIT' | translate}}</a>
+                    <!--<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span>&nbsp;{{'EDIT' | translate}}</button>-->
+                </td>
             </tr>
             </tbody>
         </table>

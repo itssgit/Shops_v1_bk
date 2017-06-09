@@ -5,12 +5,14 @@
     "COPYRIGHT": "Copyright",
     
     "DASHBOARD": "Tổng quan",
+    "DELETE": "Xóa",
     "DONT_HAVE_ACCOUNT": "Bạn chưa có tài khoản? ",
 
     "EDIT": "Sửa",
     "EMAIL": "Email",
     "ENTRIES": "mục",
     "ENTRIES_PER_PAGE": "mục trên trang",
+    "EXPORT": "Xuất",
 
     "FORGOT_YOUR_PASSWORD": "Quên mật khẩu?",
 
@@ -28,6 +30,7 @@
 
     "SALES": "Bán hàng",
     "SEARCH": "Tìm kiếm",
+    "SELECTED": "Được chọn",
     "SHOW": "Hiển thị",
     "SHOWING": "Hiển thị",
     "SIGN_UP": "Đăng kí",

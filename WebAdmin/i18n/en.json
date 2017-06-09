@@ -3,14 +3,16 @@
 
     "CUSTOMERS": "Customers",
     "COPYRIGHT": "Copyright",
-    
+
     "DASHBOARD": "Dashboard",
+    "DELETE": "Delete",
     "DONT_HAVE_ACCOUNT": "Don't have an account yet? ",
 
     "EDIT": "Edit",
     "EMAIL": "Email",
     "ENTRIES": "entries",
     "ENTRIES_PER_PAGE": "entries per page",
+    "EXPORT": "Export",
 
     "FORGOT_YOUR_PASSWORD": "Forgot your password?",
 
@@ -28,6 +30,7 @@
 
     "SALES": "Sales",
     "SEARCH": "Search",
+    "SELECTED": "Selected",
     "SHOW": "Show",
     "SHOWING": "Showing",
     "SIGN_UP": "Sign up",

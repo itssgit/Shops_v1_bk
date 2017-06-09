@@ -18,7 +18,7 @@
             b = new Date,
             c = b.getFullYear(),
             d = {
-                brand: "SSS",
+                brand: "ShopS",
                 name: "Ducky",
                 year: c,
                 layout: "wide",
