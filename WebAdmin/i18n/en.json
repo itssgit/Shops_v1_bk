@@ -1,12 +1,16 @@
 {
+    "ADD": "Add new",
+
     "CUSTOMERS": "Customers",
     "COPYRIGHT": "Copyright",
     
     "DASHBOARD": "Dashboard",
     "DONT_HAVE_ACCOUNT": "Don't have an account yet? ",
 
+    "EDIT": "Edit",
     "EMAIL": "Email",
     "ENTRIES": "entries",
+    "ENTRIES_PER_PAGE": "entries per page",
 
     "FORGOT_YOUR_PASSWORD": "Forgot your password?",
 
@@ -18,10 +22,13 @@
     "ORDERS": "Orders",
 
     "PASSWORD": "Password",
+    "PICTURES": "Pictures",
+    "PRICE": "Price",
     "PRODUCTS": "Products",
 
     "SALES": "Sales",
     "SEARCH": "Search",
+    "SHOW": "Show",
     "SHOWING": "Showing",
     "SIGN_UP": "Sign up",
     "STORE": "Store"

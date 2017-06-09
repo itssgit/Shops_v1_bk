@@ -1,12 +1,16 @@
-{ 
+{
+    "ADD": "Thêm mới",
+
     "CUSTOMERS": "Khách hàng",
     "COPYRIGHT": "Copyright",
     
     "DASHBOARD": "Tổng quan",
     "DONT_HAVE_ACCOUNT": "Bạn chưa có tài khoản? ",
 
+    "EDIT": "Sửa",
     "EMAIL": "Email",
     "ENTRIES": "mục",
+    "ENTRIES_PER_PAGE": "mục trên trang",
 
     "FORGOT_YOUR_PASSWORD": "Quên mật khẩu?",
 
@@ -18,10 +22,13 @@
     "ORDERS": "Hóa đơn",
 
     "PASSWORD": "Mật khẩu",
+    "PICTURES": "Hình ảnh",
+    "PRICE": "Giá",
     "PRODUCTS": "Sản phẩm",
 
     "SALES": "Bán hàng",
     "SEARCH": "Tìm kiếm",
+    "SHOW": "Hiển thị",
     "SHOWING": "Hiển thị",
     "SIGN_UP": "Đăng kí",
     "STORE": "Kho"
