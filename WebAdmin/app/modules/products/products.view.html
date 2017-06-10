@@ -38,7 +38,7 @@
             <thead>
             <tr class="bg-dark">
                 <th><div class="th">
-                    <input type="checkbox"/>
+                    <label class="ui-checkbox"><input name="checkbox1" type="checkbox" ><span></span></label>
                 </div></th>
                 <th><div class="th">
                     {{'PICTURES' | translate}}
@@ -67,7 +67,7 @@
             </thead>
             <tbody>
             <tr data-ng-repeat="store in currentPageStores">
-                <td><input type="checkbox"/></td>
+                <td><label class="ui-checkbox"><input name="checkbox1" type="checkbox" ><span></span></label></td>
                 <td>path picture</td>
                 <td>{{store.name}}</td>
                 <td>{{store.price}}</td>

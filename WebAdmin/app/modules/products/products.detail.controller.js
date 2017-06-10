@@ -1,8 +1,12 @@
-/**
- * Created by vietdd on 09/06/2017.
- */
-(function(){
+(function() {
     "use strict";
 
-    angular.modules()
+    function a($scope) {
+        $scope.image = null;
+        $scope.imageFileName = '';
+
+        $scope.uploadme = {};
+        $scope.uploadme.src = '';
+    }
+    angular.module("app").controller("ProductDetailCtrl", ["$scope", a])
 })();
